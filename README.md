@@ -1,65 +1,78 @@
 ```markdown
 # Cards
 
+Welcome to the Cards repository! This project is designed to facilitate operations related to card processing but currently requires `tesseract.exe` for successful deployment.
+
 ## Short Description
-Cards is a Python-based application that implements card recognition functionalities. Currently, the deployment is not operational as it requires the `tesseract.exe` executable for optimal performance. 
+
+The Cards project has been developed in Python and serves as a foundational tool for various card-related functionalities, including card recognition and data extraction. Please note that deployment is not functional at this moment due to the dependency on `tesseract.exe`.
 
 ## Features
-- Optical Character Recognition (OCR) capabilities for card reading
-- Simple and intuitive interface for card input
-- Detailed recognition output with potential future enhancements
+
+- Card recognition and data extraction capabilities
+- Simple and easy-to-use interface
+- Built with Python for flexibility and compatibility
 
 ## Installation
-To get started with Cards, follow these steps to set up your environment:
+
+To get started with the Cards project, please follow the instructions below:
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/tarun-s-cloud/cards.git
-   ```
-   
-2. **Navigate to the project directory**:
-   ```bash
    cd cards
    ```
-   
-3. **Set up a virtual environment (optional but recommended)**:
+
+2. **Install the required Python libraries**:
+   It is recommended to use a virtual environment. You can create one using:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
-
-4. **Install the required dependencies**:
+   Then install the necessary packages (check `requirements.txt`):
    ```bash
    pip install -r requirements.txt
    ```
 
-5. **Install Tesseract OCR**:
-   - Download and install Tesseract OCR from the [official site](https://github.com/tesseract-ocr/tesseract).
-   - Make sure that `tesseract.exe` is accessible in your system's PATH.
+3. **Install Tesseract OCR**:
+   You will need to install `tesseract.exe` on your system. Follow the instructions specific to your operating system:
+   - **Windows**: Download the installer from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
+   - **Linux**: You can install it via package manager:
+     ```bash
+     sudo apt-get install tesseract-ocr
+     ```
+   - **macOS**: Use Homebrew to install:
+     ```bash
+     brew install tesseract
+     ```
 
 ## Usage
-To use Cards, follow these steps:
 
-1. Ensure Tesseract is installed and configured correctly on your system.
-2. Run the application:
-   ```bash
-   python app.py
-   ```
-3. Follow the on-screen instructions to input card data for recognition.
+To use the Cards functionality, ensure that `tesseract.exe` is properly installed and included in your system's PATH. Then, run your Python scripts as needed:
+
+```bash
+python your_script.py
+```
+
+> **Note**: Make sure to replace `your_script.py` with the script you intend to execute.
 
 ## Contributing
-We welcome contributions to enhance Cards! If you'd like to contribute, please follow these steps:
+
+Contributions are welcome! If you'd like to contribute to the development of this project, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix (`git checkout -b feature/NewFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/NewFeature`).
-5. Open a Pull Request with a description of your changes.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+Please ensure that your contributions follow the project's coding conventions and include adequate tests.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ---
 
-Thank you for checking out Cards! We hope to improve functionality and welcome any contributions or feedback.
+Thank you for your interest in the Cards project! We look forward to your contributions and feedback.
 ```

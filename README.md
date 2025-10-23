@@ -1,85 +1,99 @@
 ```markdown
 # Cards
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
-## Structure
-```
-├── Procfile
-├── README.md
-├── __pycache__
-├── app.cpython-313.pyc
-├── app.py
-├── driving_face
-├── functions
-├── __pycache__
-│   ├── extraction.cpython-313.pyc
-├── extraction.py
-├── index.html
-├── render.yaml
-├── requirements.txt
-├── uploads
-```
+Welcome to the Cards project! This repository is a Python-based application designed for processing card-related functionalities. It currently leverages Tesseract OCR for text extraction, making it an essential component for certain features.
 
 ## Short Description
-The **Cards** repository is a Python-based application designed for processing card images. However, it may not function properly during deployment due to the requirement of `tesseract.exe`, an optical character recognition (OCR) engine that is necessary for image processing features.
+
+The Cards application serves as a framework for handling card-related data, incorporating capabilities for image processing and text extraction using Tesseract. Currently, the project is not fully functional in a deployment environment due to the absence of `tesseract.exe`.
+
+## Structure of the Project
+
+Here’s a breakdown of the project structure:
+
+```
+├── Procfile               # File for specifying the commands that are executed by the app on deployment.
+├── README.md              # Documentation file for the project.
+├── __pycache__            # Compiled Python files.
+│   ├── app.cpython-313.pyc
+├── app.py                 # Main application file where the core functionalities are implemented.
+├── driving_face           # Directory possibly containing resources or models related to driving face detection.
+├── functions              # Directory containing helper functions for the application.
+├── __pycache__            # Another compilation directory.
+│   ├── extraction.cpython-313.pyc
+├── extraction.py          # Module responsible for image text extraction functions.
+├── index.html             # HTML file, potentially for frontend display.
+├── render.yaml            # YAML configuration file, usage may vary.
+├── requirements.txt       # File listing Python package dependencies.
+├── uploads                # Directory for uploading files, likely containing user-input images.
+```
 
 ## Features
-- Image uploading and management
-- Optical character recognition using Tesseract
-- Modular code structure for easy maintenance
-- HTML interface for user interaction
+
+- **Text Extraction:** Utilizes Tesseract OCR for text extraction from images (requires installation of `tesseract.exe`).
+- **Image Handling:** Supports the uploading and processing of images related to cards.
+- **Modular Design:** Organized code structure for easy navigation and scalability.
 
 ## Installation
-To set up the Cards application locally, follow these steps:
+
+To get started with the Cards application, follow these steps:
 
 1. **Clone the repository:**
+   
    ```bash
    git clone https://github.com/tarun-s-cloud/cards.git
    cd cards
    ```
+
+2. **Install Python dependencies:**
    
-2. **Install prerequisites:**
-   Ensure you have Python installed. If not, download and install it from [python.org](https://www.python.org/).
+   Make sure you have Python installed. Then, run:
 
-3. **Install Tesseract:**
-   - Download the Tesseract installer from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) for Windows users or use package managers for Linux/Mac.
-   - Add the Tesseract installation path to your system’s PATH environment variable.
-
-4. **Install required packages:**
-   Use pip to install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
+3. **Install Tesseract OCR:**
+   
+   Download and install Tesseract OCR from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) and ensure it is accessible in your system's PATH.
+
 ## Usage
-Once the application is set up:
 
-1. **Start the application:**
-   ```bash
-   python app.py
-   ```
+To run the Cards application locally, execute:
 
-2. **Open your browser:**
-   Navigate to `http://localhost:5000` to access the application interface.
+```bash
+python app.py
+```
 
-3. **Upload images:**
-   Use the provided interface to upload and process card images.
+Make sure all dependencies are installed and that Tesseract OCR is properly configured in your environment.
+
+Navigate to `index.html` in your web browser to access the application's frontend interface.
 
 ## Contributing
-We welcome contributions to the Cards project! If you would like to contribute, please follow these steps:
+
+Contributions are welcome! If you would like to contribute to the Cards project, please follow these steps:
 
 1. Fork the repository.
-2. Create a new feature branch (`git checkout -b feature/AmazingFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request detailing your changes.
+2. Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes.
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to the branch.
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Submit a pull request.
 
-Please ensure your code adheres to the current coding standards and includes appropriate tests.
+Please ensure to follow best practices and write clear commit messages for better collaboration.
 
 ## License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```
-Feel free to customize further as needed! 
+---
+For any questions or feedback, please feel free to open an issue in the repository or reach out to the project maintainer.
 ```
